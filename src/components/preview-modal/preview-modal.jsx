@@ -23,25 +23,27 @@ const PreviewModal = ({intl, ...props}) => (
         overlayClassName={styles.modalOverlay}
         onRequestClose={props.onTryIt}
     >
-        <Box className={styles.illustration} />
-
+        {/*<Box className={styles.illustration} /> 
+        */}
         <Box className={styles.body}>
             <h2>
                 <FormattedMessage
-                    defaultMessage="Welcome to the Scratch 3.0 Preview"
+                    defaultMessage="Welcome to the OGPC Kiosk!"
                     description="Header for Preview Info Modal"
                     id="gui.previewInfo.welcome"
                 />
             </h2>
+            <iframe width="360" height="180" src="https://www.youtube.com/embed/VIpmkeqJhmQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <p>
                 <FormattedMessage
-                    defaultMessage="We're working on the next generation of Scratch. We're excited for you to try it!"
+                    defaultMessage="Drag, drop, and connect blocks in the play area to create fun games and animations!"
                     description="Invitation to try 3.0 preview"
                     id="gui.previewInfo.invitation"
                 />
             </p>
 
             <Box className={styles.buttonRow}>
+            {/*}
                 <button
                     className={styles.noButton}
                     onClick={props.onCancel}
@@ -52,6 +54,7 @@ const PreviewModal = ({intl, ...props}) => (
                         id="gui.previewInfo.notnow"
                     />
                 </button>
+            */}
                 <button
                     className={styles.okButton}
                     title="tryit"
@@ -74,17 +77,17 @@ const PreviewModal = ({intl, ...props}) => (
             </Box>
             <Box className={styles.faqLinkText}>
                 <FormattedMessage
-                    defaultMessage="To learn more, go to the {previewFaqLink}."
+                    defaultMessage="To learn more about OGPC, go to the {previewFaqLink}."
                     description="Invitation to try 3.0 preview"
                     id="gui.previewInfo.previewfaq"
                     values={{
                         previewFaqLink: (
                             <a
                                 className={styles.faqLink}
-                                href="//scratch.mit.edu/preview-faq"
+                                href="https://www.ogpc.info/"
                             >
                                 <FormattedMessage
-                                    defaultMessage="Preview FAQ"
+                                    defaultMessage="OGPC website"
                                     description="link to Scratch 3.0 preview FAQ page"
                                     id="gui.previewInfo.previewfaqlink"
                                 />

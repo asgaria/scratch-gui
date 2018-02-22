@@ -15,7 +15,7 @@ import {openFeedbackForm} from '../../reducers/modals';
 import styles from './menu-bar.css';
 
 import feedbackIcon from './icon--feedback.svg';
-import scratchLogo from './scratch-logo.svg';
+import scratchLogo from './OGPC-Logo.png';
 
 const MenuBar = props => (
     <Box
@@ -35,6 +35,7 @@ const MenuBar = props => (
             <LoadButton className={styles.menuItem} />
             <LanguageSelector className={styles.menuItem} />
         </div>
+        {/*
         <div className={styles.feedbackButtonWrapper}>
             <Button
                 className={styles.feedbackButton}
@@ -53,6 +54,7 @@ const MenuBar = props => (
                 </span>
             </Button>
         </div>
+        */}
     </Box>
 );
 
